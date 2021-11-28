@@ -1,0 +1,23 @@
+{
+  "name": "javascript-expert-project01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/api.js",
+    "test:dev": "NODE_ENV=test npx mocha -w --parallel **/**/*.test.js",
+    "test": "npx standard --fix && NODE_ENV=test npx mocha --parallel **/**/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha --exit --parallel **/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "Marcos Vinicius Rocha Davi Alves <marcos.edo132@gmail.com> - Github <https://github.com/MarckRDA>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.1",
+    "standard": "^16.0.4",
+    "supertest": "^6.0.1"
+  }
+}
