@@ -2,7 +2,7 @@ const https = require('https')
 const BASE_URL = "https://pokeapi.co/api/v2/"
 class PokeApi {
     async makeRequest(resourceUrl) {
-        const url = BASE_URL + resourceUrl
+        const url = resourceUrl.startsWith('https') ? resourceUrl :  BASE_URL + resourceUrl
         const rawData = []
         return new Promise((resolve, reject) => {
             https.get(url, response => {
@@ -17,13 +17,12 @@ class PokeApi {
             })
         })
     }
-    async getPokemonsUrl() {
+    async* getPokemonsUrl() {
         const {results} = await this.makeRequest('pokemon')
-        const urlList = []
-        results.forEach(item => {
-            urlList.push(item.url)
-        })
-        return urlList
+        for (let index = 0; index < results.length; index++) {
+            const element = results[index];
+            yield element.url
+        }
     }
 }
 

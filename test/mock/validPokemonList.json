@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "bulbasaur",
+        "moves": [
+            "razor-wind",
+            "swords-dance",
+            "cut"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "ivysaur",
+        "moves": [
+            "swords-dance",
+            "cut",
+            "bind"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "venusaur",
+        "moves": [
+            "swords-dance",
+            "cut",
+            "bind"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "charmander",
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "charmeleon",
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "charizard",
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "squirtle",
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "wartortle",
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "blastoise",
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "caterpie",
+        "moves": [
+            "tackle",
+            "string-shot",
+            "snore"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "metapod",
+        "moves": [
+            "string-shot",
+            "harden",
+            "iron-defense"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "butterfree",
+        "moves": [
+            "razor-wind",
+            "gust",
+            "whirlwind"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "weedle",
+        "moves": [
+            "poison-sting",
+            "string-shot",
+            "bug-bite"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "kakuna",
+        "moves": [
+            "string-shot",
+            "harden",
+            "iron-defense"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "beedrill",
+        "moves": [
+            "swords-dance",
+            "cut",
+            "fury-attack"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "pidgey",
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "pidgeotto",
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "pidgeot",
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "rattata",
+        "moves": [
+            "cut",
+            "headbutt",
+            "tackle"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "raticate",
+        "moves": [
+            "swords-dance",
+            "cut",
+            "headbutt"
+        ]
+    }
+]

@@ -27,6 +27,15 @@ class TeamRepository {
         return new Pokemon(id, name, moves)
     }
 
+    async getPokemons() {
+        const pokemonList = []
+        for await (let pokemonUrl of this.pokeApiInstance.getPokemonsUrl()) {
+            const pokemon = await this.getPokemon(pokemonUrl)
+            pokemonList.push(pokemon)
+        }
+        return pokemonList
+    }
+
 }
 
 module.exports = TeamRepository
