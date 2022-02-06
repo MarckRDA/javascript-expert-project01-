@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/api.js",
     "test:dev": "NODE_ENV=test npx mocha -w --parallel **/**/*.test.js",
-    "test": "npx standard --fix && NODE_ENV=test npx mocha --parallel **/**/*.test.js",
+    "test": " NODE_ENV=test npx mocha --parallel **/**/*.test.js",
     "test:cov": "NODE_ENV=test npx nyc npx mocha --exit --parallel **/**/*.test.js"
   },
   "keywords": [],
