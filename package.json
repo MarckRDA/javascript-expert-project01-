@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/api.js",
-    "test:dev": "NODE_ENV=test npx mocha -w --parallel **/**/*.test.js",
-    "test": " NODE_ENV=test npx mocha --parallel **/**/*.test.js",
-    "test:cov": "NODE_ENV=test npx nyc npx mocha --exit --parallel **/**/*.test.js"
+    "test:dev": "NODE_ENV=test npx mocha --timeout 10000 -w --parallel **/**/*.test.js",
+    "test": " NODE_ENV=test npx mocha --timeout 10000 --parallel **/**/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha --timeout 10000 --exit --parallel **/**/*.test.js"
   },
   "keywords": [],
   "author": "Marcos Vinicius Rocha Davi Alves <marcos.edo132@gmail.com> - Github <https://github.com/MarckRDA>",

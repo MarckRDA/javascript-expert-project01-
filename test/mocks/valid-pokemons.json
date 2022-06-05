@@ -1,0 +1,11 @@
+[
+  { "name": "bulbasaur", "moves": ["razor-wind", "swords-dance", "cut"] },
+  {
+    "name": "charizard",
+    "moves": ["mega-punch", "fire-punch", "thunder-punch"]
+  },
+  {
+    "name": "charmander",
+    "moves": ["mega-punch", "fire-punch", "thunder-punch"]
+  }
+]

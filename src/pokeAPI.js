@@ -1,6 +1,6 @@
 const https = require('https')
-const BASE_URL = 'https://swapi.dev/api/'
-class SWapi {
+const BASE_URL = 'https://pokeapi.co/api/v2/'
+class PokeApi {
   static async * makeRequest (resourceUrl) {
     const url = resourceUrl.startsWith('https') ? resourceUrl : BASE_URL + resourceUrl
     const rawData = []
@@ -21,13 +21,12 @@ class SWapi {
 
   static async makeMultiplesRequest (resourcesUrlList) {
     const responseList = []
-    for (let i = 0; i < resourcesUrlList.length; i++) {
-      for await (const item of SWapi.makeRequest(resourcesUrlList[i])) {
-        responseList.push(item)
-      }
-    }
+    await Promise.all(resourcesUrlList.map(async (url) => {
+      const pokemon = (await PokeApi.makeRequest(url).next()).value
+      responseList.push(pokemon)
+    }))
     return responseList
   }
 }
 
-module.exports = SWapi
+module.exports = PokeApi
